@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- POM文件的版本 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 项目组的唯一标识 -->
+    <groupId>com</groupId>
+
+    <!-- 项目模块的唯一标识 -->
+    <artifactId>dashboard</artifactId>
+
+    <!-- 项目的版本 -->
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- 设置编译源代码和目标字节码的JDK版本 -->
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <!-- 设置项目的编码方式为UTF-8 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- FlatLaf 是一个现代的 Java UI L&F (Look and Feel) -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf</artifactId>
+            <version>3.5</version>
+        </dependency>
+
+        <!-- FlatLaf 的 IntelliJ 主题插件 -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf-intellij-themes</artifactId>
+            <version>3.5</version>
+        </dependency>
+
+        <!-- FlatLaf 的 SwingX 插件，用于扩展 Swing 组件 -->
+        <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf-swingx</artifactId>
+            <version>3.5</version>
+        </dependency>
+
+        <!-- SwingX 提供了一些额外的 Swing 控件 -->
+        <dependency>
+            <groupId>org.swinglabs.swingx</groupId>
+            <artifactId>swingx-all</artifactId>
+            <version>1.6.5-1</version>
+        </dependency>
+
+        <!-- Hutool 工具类库，包含很多常用的工具方法 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.26</version>
+        </dependency>
+
+        <!-- Lombok 用于减少样板代码，如 getter、setter、toString 等方法 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope> <!-- 该依赖仅在编译时需要，运行时不需要 -->
+        </dependency>
+
+        <!-- EasyExcel 是阿里巴巴提供的 Excel 读写工具 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+
+        <!-- JFreeChart 用于生成各种图表 -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+        <!-- JCommon 是 JFreeChart 依赖的库，提供了基本的功能 -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jcommon</artifactId>
+            <version>1.0.24</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+        </dependency>
+    </dependencies>
+
+</project>
